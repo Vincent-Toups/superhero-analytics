@@ -54,4 +54,4 @@ flycheck_*.el
 /network-security.data
 
 Rplots.pdf
-
+.bash_history
