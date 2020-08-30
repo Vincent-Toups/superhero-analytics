@@ -1,4 +1,6 @@
 .local/*
 .rstudio/*
-.derived_data/*.csv
+derived_data/*.csv
+figures/*.png
+figures/*.pdf
 
