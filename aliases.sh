@@ -6,3 +6,4 @@ alias hc='docker run -p 8711:8000 -v `pwd`:/host -it project1-dev hovercraft /ho
 alias hcb='docker run -v `pwd`:/host -it project1-dev hovercraft /host/slides.rst /host/html_presentation'
 
 alias r='docker run -v `pwd`:/home/rstudio -e PASSWORD=not_important -it project1-dev sudo -H -u rstudio /bin/bash -c "cd ~/; R"'
+alias b='docker run -v `pwd`:/home/rstudio -e PASSWORD=not_important -it project1-dev sudo -H -u rstudio /bin/bash -c "cd ~/; /bin/bash"'
