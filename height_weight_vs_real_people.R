@@ -1,4 +1,5 @@
 library(tidyverse);
+library(xtable);
 
 data <- rbind(read_csv("derived_data/real_height_weights.csv") %>%
               select(gender, height, weight) %>%
