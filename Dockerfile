@@ -1,3 +1,3 @@
 FROM rocker/verse
 MAINTAINER Vincent Toups <toups@email.unc.edu>
-RUN echo "Hello World"
+RUN R -e "install.packages('gridExtra')"
