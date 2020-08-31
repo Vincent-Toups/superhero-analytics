@@ -5,6 +5,7 @@ clean:
 	rm derived_data/*.json
 	rm figures/*.png
 	rm figures/*.pdf
+	rm fragments/*.tex
 	rm report.pdf
 
 figures/gender_power_comparison.png\
