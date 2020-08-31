@@ -1,15 +1,12 @@
 library(tidyverse);
 source("utils.R");
 
-`%without%` <- function(a, b){
-    a[!(a %in% b)];
-}
-
 information <- 
   read_csv("source_data/datasets_26532_33799_heroes_information.csv");
 powers <- read_csv("source_data/datasets_26532_33799_super_hero_powers.csv");
 
-real_height_weights <- tidy_up_names(read_csv("source_data/datasets_26073_33239_weight-height.csv"));
+real_height_weights <- tidy_up_names(read_csv("source_data/datasets_26073_33239_weight-height.csv")) %>%
+    mutate(height=height*2.54, weight=0.4535924*weight);
 
 powers <- tidy_up_names(powers);
 information <- tidy_up_names(information);
