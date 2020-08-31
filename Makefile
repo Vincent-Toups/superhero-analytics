@@ -26,9 +26,13 @@ derived_data/information.csv\
  tidy_data.R
 	Rscript tidy_data.R
 
-fragments/real_comics_weight_height.tex:\
+fragments/real_comics_weight_height.tex\
+ figures/comparison_of_heights_and_weights.png:\
  derived_data/real_height_weights.csv\
  derived_data/information.csv\
  height_weight_vs_real_people.R
 	Rscript height_weight_vs_real_people.R
+
+assets/comparison_of_heights_and_weights.png: figures/comparison_of_heights_and_weights.png
+	cp figures/comparison_of_heights_and_weights.png assets/comparison_of_heights_and_weights.png
 
