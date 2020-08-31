@@ -36,7 +36,18 @@ be downloaded [](https://www.kaggle.com/claudiodavi/superhero-set).
 This repo will eventually contain an analysis of
 the Superhero Powers Dataset.
 
+### Preliminary Figures
+
 ![](assets/comparison_of_heights_and_weights.png)
+
+The above figure shows that there is a difference between the way
+weights and heights are distributed and related between real and
+fictional human beings.
+
+![](assets/gender_power_comparison_single3.png)
+
+While powers are distributed similarly between male and female heroes,
+some notable exceptions exist.
 
 Usage
 -----
