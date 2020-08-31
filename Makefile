@@ -36,3 +36,5 @@ fragments/real_comics_weight_height.tex\
 assets/comparison_of_heights_and_weights.png: figures/comparison_of_heights_and_weights.png
 	cp figures/comparison_of_heights_and_weights.png assets/comparison_of_heights_and_weights.png
 
+assets/gender_power_comparison_single3.png: figures/gender_power_comparison_single3.png
+	cp figures/gender_power_comparison_single3.png assets/gender_power_comparison_single3.png
