@@ -49,5 +49,10 @@ data <- rbind(read_csv("derived_data/real_height_weights.csv") %>%
     filter(gender %in% c("Male","Female"));
 
 p <- ggplot(data, aes(height, weight)) +
-    geom_point(aes(color=gender,size=type));
+    geom_point(aes(color=paste(type,gender,sep=":")),alpha=0.3) +
+    xlim(100,250) +
+    ylim(0,1000) +
+    guides(color=guide_legend(title="Type : Gender")) +
+    labs(title="Real Vs Comic Book Heights and Weight w/ Gender");
 ggsave("figures/comparison_of_heights_and_weights.png");
+
