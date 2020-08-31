@@ -23,3 +23,10 @@ derived_data/information.csv derived_data/powers.csv:\
  source_data/datasets_26532_33799_super_hero_powers.csv\
  tidy_data.R
 	Rscript tidy_data.R
+
+fragments/real_comics_weight_height.tex:\
+ derived_data/real_height_weights.csv\
+ derived_data/information.csv\
+ height_weight_vs_real_people.R
+	Rscript height_weight_vs_real_people.R
+
