@@ -39,6 +39,13 @@ fragments/gbm.fragment.tex:\
  derived_data/powers.csv
 	Rscript predict-gender-gbm.R
 
+fragments/gender-hw-gbm.fragment.tex\
+fragments/real-gender-hw-gbm.fragment.tex:\
+ predict-gender-hw.R\
+ derived_data/information.csv\
+ derived_data/real_height_weights.csv
+	Rscript predict-gender-hw.R
+
 assets/comparison_of_heights_and_weights.png: figures/comparison_of_heights_and_weights.png
 	cp figures/comparison_of_heights_and_weights.png assets/comparison_of_heights_and_weights.png
 
