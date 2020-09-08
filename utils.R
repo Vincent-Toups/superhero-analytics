@@ -14,3 +14,7 @@ tidy_up_names <- function(dataset){
     a[!(a %in% b)];
 }
 
+write_wrapped <- function(s, file, append=FALSE){
+  s <- strwrap(s);
+  write(s,file,append=append);
+}
