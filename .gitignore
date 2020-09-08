@@ -3,6 +3,9 @@
 derived_data/*.csv
 figures/*.png
 figures/*.pdf
+figures/*.html
+
+.lesshst
 
 # -*- mode: gitignore; -*-
 *~
