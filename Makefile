@@ -33,8 +33,15 @@ fragments/real_comics_weight_height.tex\
  height_weight_vs_real_people.R
 	Rscript height_weight_vs_real_people.R
 
+fragments/gbm.fragment.tex:\
+ predict-gender-gbm.R\
+ derived_data/information.csv\
+ derived_data/powers.csv
+	Rscript predict-gender-gbm.R
+
 assets/comparison_of_heights_and_weights.png: figures/comparison_of_heights_and_weights.png
 	cp figures/comparison_of_heights_and_weights.png assets/comparison_of_heights_and_weights.png
 
 assets/gender_power_comparison_single3.png: figures/gender_power_comparison_single3.png
 	cp figures/gender_power_comparison_single3.png assets/gender_power_comparison_single3.png
+
