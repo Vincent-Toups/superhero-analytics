@@ -64,3 +64,4 @@ Rplots.pdf
 .bash_history
 
 fragments/*.tex
+fragments/*.Rmd
