@@ -1,5 +1,10 @@
 .PHONY: clean
 
+report.pdf:\
+ report.Rmd\
+ figures/comparison_of_heights_and_weights.png
+	Rscript -e "rmarkdown::render('report.Rmd',output_format='pdf_document')"
+
 clean:
 	rm -f derived_data/*.csv
 	rm -f derived_data/*.json
@@ -27,6 +32,7 @@ derived_data/information.csv\
 	Rscript tidy_data.R
 
 fragments/real_comics_weight_height.tex\
+ fragments/height_weight.fragment.Rmd\
  figures/comparison_of_heights_and_weights.png:\
  derived_data/real_height_weights.csv\
  derived_data/information.csv\
