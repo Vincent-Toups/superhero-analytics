@@ -5,6 +5,8 @@ figures/*.png
 figures/*.pdf
 figures/*.html
 
+report.pdf 
+
 .lesshst
 
 # -*- mode: gitignore; -*-
