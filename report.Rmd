@@ -1,0 +1,38 @@
+Traces of Gender Biases in Superhero Data
+=========================================
+
+It is often observed that super hero comics operate as a kind of
+modern mythology, with the heroes and villians themselves playing the
+roles of the Greek Gods. We might thus expect them be useful
+indicators of gender biases since they represent idealizations against
+a certain cultural frame. This project will use a combination of
+descriptive statistics and modeling to investigate whether such biases
+exist.
+
+Data Sets
+=========
+
+The primary data set of interest is the [Super Heros
+Dataset][data1]. For comparison we also use the (actual) human height
+weight data set [here][data2].
+
+Language Used
+=============
+
+The data sets used in this project use terms like "Gender", "Male" and
+"Female" without making distinctions about the relationship between
+biological sex and gender, even though weight and height in human
+beings are correlated, if at all, with biological markers of sex.
+
+Nothing in this analysis is meant to endorse this
+simplification. Instead, I hope to illustrate cultural biases implicit
+in these relations.
+
+```{r child = 'fragments/height_weight.fragment.Rmd'}
+```
+
+
+* * *
+
+[data1]:https://www.kaggle.com/claudiodavi/superhero-set
+[data2]:https://www.kaggle.com/mustafaali96/weight-height
