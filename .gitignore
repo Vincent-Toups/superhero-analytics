@@ -5,6 +5,8 @@ figures/*.png
 figures/*.pdf
 figures/*.html
 
+tagged_reports/*
+
 report.pdf 
 
 .lesshst
