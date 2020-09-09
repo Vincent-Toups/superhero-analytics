@@ -1,5 +1,6 @@
 library(tidyverse);
 library(xtable);
+source("utils.R");
 
 data <- rbind(read_csv("derived_data/real_height_weights.csv") %>%
               select(gender, height, weight) %>%
@@ -56,3 +57,22 @@ p <- ggplot(data, aes(height, weight)) +
     labs(title="Real Vs Comic Book Heights and Weight w/ Gender");
 ggsave("figures/comparison_of_heights_and_weights.png");
 
+
+
+write(sprintf("Heights and Weights ===================
+
+Ordinary human beings have fairly normal height and weight
+distributions with modest sex-related differences.
+
+![](figures/comparison_of_heights_and_weights.png)
+*Human and comic book character heights and sex.*
+
+These distributions are wide compared to those which we see in comic
+book characters. In particular, both Male identified and Female
+identified comic book characters are taller and weigh less than the
+normal distribution of human heights and weights would suggest.
+
+A few other interesting features present themselves: male comic book
+characters have some very large weights which are not present in other
+populations.
+"),file="fragments/height_weight.fragment.Rmd",append=FALSE);
