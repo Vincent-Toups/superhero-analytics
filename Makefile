@@ -1,9 +1,12 @@
 .PHONY: clean
+SHELL: /bin/bash
 
 report.pdf:\
  report.Rmd\
  figures/comparison_of_heights_and_weights.png
 	Rscript -e "rmarkdown::render('report.Rmd',output_format='pdf_document')"
+	mkdir -p tagged_reports/
+	cp report.pdf tagged_reports/`git log -1 | head -n 1| cut -d' ' -f2`-report.pdf
 
 clean:
 	rm -f derived_data/*.csv
